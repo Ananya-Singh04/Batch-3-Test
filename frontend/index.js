@@ -694,6 +694,11 @@ document.addEventListener('DOMContentLoaded', async () => {
                     student.url
                 ].join(',');
             });
+
+            function myFunction() {
+                var element = document.body;
+                element.classList.toggle("dark-mode");
+             }
             
             const csvContent = [headers.join(','), ...csvRows].join('\n');
             const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
